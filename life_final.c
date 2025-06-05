@@ -417,7 +417,7 @@ int main(int argc, char *argv[]){
         if (!current_config.paused)
         {
             current_config.elapsed = (SDL_GetTicks() - current_config.simulation_start) / 1000;
-            //printf("\r%-60s", ""); //преложил чат gpt, потому что если загрузить симуляцию из файла, время отобрадается некорректно. Если добавить stdin_clear(), программа зависает. 
+            printf("\r%-60s", ""); //преложил чат gpt, потому что если загрузить симуляцию из файла, время отобрадается некорректно. Если добавить stdin_clear(), программа зависает. 
             printf("\rВремя симуляции: %u сек   Поколение: %u", current_config.elapsed, current_config.generation);
             fflush(stdout);
             SDL_Delay(current_config.delay);
