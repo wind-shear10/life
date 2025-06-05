@@ -289,7 +289,7 @@ int start_config(ushort *** grid, ushort ***new_grid, game_config *current_confi
         }
         randomize_grid(*grid, current_config -> ROWS, current_config -> COLS);
         current_config -> running = 1;
-        current_config -> paused = 1;
+        current_config -> paused = 0;
         current_config -> generation = 0;
         return 1;
     }
