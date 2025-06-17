@@ -14,7 +14,7 @@ gcc -IC:\libs\SDL2\include -LC:\libs\SDL2\lib -lmingw32 -lSDL2main -lSDL2 -o my_
 
 FOR MACOS:
 download homebrew package manager 
-install SDL2 library:
+install the SDL2 library:
 brew install SDL2
 use the following flag during compilation:
 clang path/to/.c/file -o path/to/.exec/file `sdl2-config --cflags --libs`
